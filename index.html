@@ -4,9 +4,9 @@
 <script>
   let i = 0;
   (()=>{
-    const inte = system.runInterval(()=>{
+    const inte = runInterval(()=>{
       alert('a');
-      if (i >= 10) system.clearInterval(inte);
+      if (i >= 10) clearInterval(inte);
       i++;
     }, 1000)
   }
