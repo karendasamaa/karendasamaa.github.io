@@ -2,8 +2,13 @@
   Hello world!123
 </html>
 <script>
+  let i = 0;
   (()=>{
-    alert('a');
+    const inte = system.runInterval(()=>{
+      alert('a');
+      if (i >= 10) system.clearInterval(inte);
+      i++;
+    }, 1000)
   }
   )()
 </script>
