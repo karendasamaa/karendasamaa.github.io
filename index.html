@@ -4,7 +4,7 @@
 <script>
   let i = 0;
   (()=>{
-    const inte = runInterval(()=>{
+    const inte = setInterval(()=>{
       alert('a');
       if (i >= 10) clearInterval(inte);
       i++;
